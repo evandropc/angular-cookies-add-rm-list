@@ -1,0 +1,28 @@
+{
+  "name": "Evandro Cavichioli",
+  "version": "1.0-Beta",
+  "main": "index.html",
+  "ignore": [
+    "**/.*",
+    "libs",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "latest",
+    "bootstrap": "latest",
+    "angular-cookies": "^1.5.5"
+  },
+  "authors": [
+    "Evandro Panaro Cavichioli <evandro.cavichioli@gmail.com>"
+  ],
+  "description": "Evandro Cavichioli",
+  "keywords": [],
+  "license": "MIT",
+  "private": true,
+  "resolutions": {
+    "angular": ">=1.2.0"
+  }
+}

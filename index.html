@@ -1,0 +1,50 @@
+<html ng-app="app">
+<head>
+    <title>Cookies Add, Remove and List</title>
+    <link rel="stylesheet" href="resources/bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        @media (min-width: 768px){
+            .container {
+                margin-top: 30px;
+                max-width: 730px;
+            }
+        }
+    </style>
+</head>
+    
+<body ng-controller="mainController">
+    
+    <div class="container">
+        
+    <form>
+        <div class="form-group">
+            <label>Key</label>
+            <input type="text" class="form-control" ng-model="form.key">
+        </div>
+        <div class="form-group">
+            <label>Value</label>
+            <input type="text" class="form-control" ng-model="form.value">
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Gravar" ng-click="add(form)" class="btn btn-primary">
+        </div>
+    
+        <ul class="list-group">
+            <li class="list-group-item" ng-repeat="cookie in list">
+                <span class="badge" ng-click="delete(cookie)">X</span>
+                {{cookie.key}} - {{cookie.value}}
+            </li>
+        </ul>
+       
+    </form> 
+    
+    </div> 
+    
+</body>
+    <script src="resources/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="resources/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="resources/bower_components/angular/angular.js"></script>
+    <script src="resources/bower_components/angular-cookies/angular-cookies.min.js"></script>
+    <script src="resources/app.js"></script>
+</html>
+    
